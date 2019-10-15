@@ -3,12 +3,12 @@ const addDivToPage = (doc) => {
 
     const containerDiv = doc.createElement('DIV')
     document.body.appendChild(containerDiv)
-    const containerStyle = 'color: black; background: white; margin: 50px; border-radius: 15px; height: 250px; border: 1px solid blue; position: fixed !important; width: 400px; height: 250px !important; top: -17px !important; right: -17px !important; z-index: 2147483647 !important; border-width: initial !important; border-style: none !important; border-color: initial !important;border-image: initial !important; box-shadow: 0 30px 50px 0 rgba(44,49,59,0.20);'
-    containerDiv.setAttribute("style", containerStyle)
+    const containerStyle = 'color: black; background: white; margin: 50px; border-radius: 15px; border: 1px solid blue; position: fixed !important; width: 400px; height: 250px !important; top: -17px !important; right: -17px !important; z-index: 2147483647 !important; border-width: initial !important; border-style: none !important; border-color: initial !important;border-image: initial !important; box-shadow: 0 30px 50px 0 rgba(44,49,59,0.20); display: flex; flex-direction: column; font-family: Larsseit, Helvetica, Arial, sans-serif; background-image: url(https://morganfeir.s3.us-east-2.amazonaws.com/images/updated-background.png); color: #001a66'
+    containerDiv.setAttribute('style', containerStyle)
 
     const closeDivContainer = doc.createElement('DIV')
-    const closeDivContainerStyle = 'display: flex; justify-content: flex-end; margin: 10px'
-    closeDivContainer.setAttribute("style", closeDivContainerStyle)
+    const closeDivContainerStyle = 'display: flex; justify-content: flex-end; margin: 20px'
+    closeDivContainer.setAttribute('style', closeDivContainerStyle)
     containerDiv.appendChild(closeDivContainer)
 
     const closeButtonContainer = doc.createElement('DIV')
@@ -17,6 +17,8 @@ const addDivToPage = (doc) => {
     closeButtonContainer.innerHTML = svgString
 
     const textContainer = doc.createElement('DIV')
+    const textContainerStyle = 'text-align: center; font-size: 2rem'
+    textContainer.setAttribute('style', textContainerStyle)
     textContainer.textContent = 'MADE BY METALAB'
     containerDiv.appendChild(textContainer)
 }
