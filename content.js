@@ -23,7 +23,7 @@ const addDivToPage = (doc) => {
     closeButtonContainer.addEventListener('click', closePopup)
 
     const textContainer = doc.createElement('DIV')
-    const textContainerStyle = 'text-align: center; font-size: 2rem'
+    const textContainerStyle = 'text-align: center; font-size: 2rem; margin-top: 10px'
     textContainer.setAttribute('style', textContainerStyle)
     textContainer.textContent = 'MADE BY METALAB'
     containerDiv.appendChild(textContainer)

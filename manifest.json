@@ -8,7 +8,7 @@
         "scripts": ["background.js"]
     },
     "content_scripts": [{
-      "matches": ["*://*.metalab.co/*", "*://*.otter.ai/*", "*://*.jointempest.com/*"],
+      "matches": ["*://*.metalab.co/*", "*://*.otter.ai/*", "*://*.jointempest.com/*", "*://*.ambi.school/*", "*://*.dwavesys.com/*", "*://*.neuralink.com/*", "*://*.visitworldheritage.com/*", "*://*.crypto.com/*", "*://*.notarize.com/*", "*://*.valueact.com/*", "*://*.mysudo.com/*", "*://*.getflow.com/*", "*://*.ubereats.com/*", "*://*.slack.com/*", "*://*.coinbase.com/*"],
       "js": ["content.js"]
     }],
     "page_action": {
