@@ -8,7 +8,7 @@
         "scripts": ["background.js"]
     },
     "content_scripts": [{
-      "matches": ["*://*.metalab.co/*", "*://*.otter.ai/*"],
+      "matches": ["*://*.metalab.co/*", "*://*.otter.ai/*", "*://*.jointempest.com/*"],
       "js": ["content.js"]
     }],
     "page_action": {
