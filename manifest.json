@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "MetaLab Metadata",
+    "description": "This extension notifies users if MetaLab worked on a product",
+    "version": "0.0.1",
+    
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+      "matches": ["*://*.metalab.co/*", "*://*.otter.ai/*"],
+      "js": ["content.js"]
+    }],
+    "page_action": {
+      "default_icon": "icon.png",
+      "default_title": "Is this a MetaLab page?"
+    },
+    "icons": {
+      "128": "icon.png"
+    },
+    "content_security_policy": "script-src 'self' 'sha256-yNiVD+rjRPTBdUeT9QkiCdaUD5M/8AcYDsFkLRgp/Ec='; object-src 'self'",
+    "permissions": [
+      "webRequest",
+      "declarativeContent",
+      "activeTab"
+  ]
+}
