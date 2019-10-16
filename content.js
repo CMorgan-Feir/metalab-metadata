@@ -3,11 +3,11 @@ const addDivToPage = (doc) => {
 
     const containerDiv = doc.createElement('DIV')
     document.body.appendChild(containerDiv)
-    const containerStyle = 'color: black; background: white; margin: 50px; border-radius: 15px; border: 1px solid blue; position: fixed !important; width: 400px; height: 250px !important; top: -17px !important; right: -17px !important; z-index: 2147483647 !important; border-width: initial !important; border-style: none !important; border-color: initial !important;border-image: initial !important; box-shadow: 0 30px 50px 0 rgba(44,49,59,0.20); display: flex; flex-direction: column; font-family: Larsseit, Helvetica, Arial, sans-serif; background-image: url(https://morganfeir.s3.us-east-2.amazonaws.com/images/updated-background.png); color: #001a66'
+    const containerStyle = 'color: black; background: white; margin: 50px; border-radius: 15px; border: 1px solid blue; position: fixed !important; width: 400px; height: 250px !important; top: -17px !important; right: -17px !important; z-index: 2147483647 !important; border-width: initial !important; border-style: none !important; border-color: initial !important;border-image: initial !important; box-shadow: 0 30px 50px 0 rgba(44,49,59,0.20); display: flex; flex-direction: column; background-image: url(https://morganfeir.s3.us-east-2.amazonaws.com/images/updated-background.png); color: #001a66'
     containerDiv.setAttribute('style', containerStyle)
 
     const closeDivContainer = doc.createElement('DIV')
-    const closeDivContainerStyle = 'display: flex; justify-content: flex-end; margin: 20px'
+    const closeDivContainerStyle = 'display: flex; justify-content: flex-end; height: 20px; margin: 20px'
     closeDivContainer.setAttribute('style', closeDivContainerStyle)
     containerDiv.appendChild(closeDivContainer)
 
@@ -23,13 +23,13 @@ const addDivToPage = (doc) => {
     closeButtonContainer.addEventListener('click', closePopup)
 
     const textContainer = doc.createElement('DIV')
-    const textContainerStyle = 'text-align: center; font-size: 2rem; margin-top: 10px'
+    const textContainerStyle = 'text-align: center; font-size: 36px; font-family: Helvetica; line-height: 1.5; margin-top: 10px'
     textContainer.setAttribute('style', textContainerStyle)
     textContainer.textContent = 'MADE BY METALAB'
     containerDiv.appendChild(textContainer)
 
     const smallerTextContainer = doc.createElement('DIV')
-    const smallerTextContainerStyle = 'text-align: center; color: grey; font-family: clearface, serif'
+    const smallerTextContainerStyle = 'text-align: center; color: grey; font-family: clearface, serif; font-size: 18px; line-height: 1.5; margin-top: 10px'
     smallerTextContainer.setAttribute('style', smallerTextContainerStyle)
     smallerTextContainer.textContent = '(DETECTED BY CAOIMHE)'
     containerDiv.appendChild(smallerTextContainer)
